@@ -1,0 +1,35 @@
+/*Exercício 1 
+body{
+    background-color: #EFF7F6;
+    font-family: monospace;
+    
+    header{
+        background-color: #F7D6E0;
+        text-align: center;
+        color: #7BDFF2;
+    }
+    main{
+        font-size: xx-large;
+    }
+    footer{
+        background-color: #F7D6E0;
+        font-size: x-large;
+        text-align: center;
+    }
+}
+strong{
+    color: #F2B5D4;
+}*/
+
+/*Exercício 2
+body{
+    background-color: #000000;
+    color: #F6F6F6;
+}
+*/
+/*Exercício 3 */
+body{
+    background-color: #FF5733;
+    color: #00FF00;
+}
+

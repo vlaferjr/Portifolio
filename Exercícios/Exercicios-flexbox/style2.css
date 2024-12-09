@@ -1,0 +1,12 @@
+body{
+    /*usar 100% da altura*/
+    height: 100vh;
+    /*elemento filho não ultrapassar elemento pai*/
+    box-sizing: border-box;
+}
+
+/*css - reset*/
+*{
+    margin: 0px;
+    padding: 0px;;
+}

@@ -1,0 +1,19 @@
+/*fazer o CSS reset tirando a margem e padding de todos os elementos
+* = seleciona todos os elementos da pg*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*Definição de margens*/
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+  }
+
+  /*Definindo propriedades da seção*/
+  .apresentacao__conteudo{
+    width: 615px;
+  }

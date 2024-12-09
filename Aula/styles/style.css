@@ -1,0 +1,260 @@
+/*Importando a fonte do texto e do título*/
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Criação de variáveis para uso das cores*/
+:root{/*root -> uso global*/
+  /*cores de fundo*/
+  --cor-primaria: #000000;
+  --cor-secundaria: #FFF5E0;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  /*variáveis da fonte*/
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
+/*fazer o CSS reset tirando a margem e padding de todos os elementos
+* = seleciona todos os elementos da pg*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*Definir a altura para usar 100% da tela*/
+  height: 80vh; /*100% do viewport hight (tela)*/;
+  /*Elemento filho não extrapolar elemento pai*/
+  box-sizing: border-box;
+  /*alteração do corpo da pg, cor de fundo*/
+  background-color: var(--cor-primaria);
+  /*alteração cor do texto*/
+  color: var( --cor-secundaria);
+}
+
+/*fazendo o espaçamento dos links do menu*/
+.cabecalho{
+  padding: 2% 0% 0% 20%; /*ordem: superior, direita, inferior, esquerda*/
+}
+
+.cabecalho__menu{
+  display: flex;
+  gap: 80px;
+}
+
+/*estilizando o menu de links*/
+.cabecalho__menu__link{
+  font-family: var(--fonte-secundaria); /*tipo de letra*/
+  /*font-size: 24px; /*tamanho da letra*/
+  font-size: 1rem; /*24px/16 = 1.5rem*/
+  font-weight: 600; /*peso da letra*/
+  color: var( --cor-terciaria); /*cor da letra*/
+  text-decoration: none;
+}
+
+span {
+  color: #ff8360;
+  padding: 5px;
+}
+
+.pai {
+  /*definir a tag pai como flex*/
+  display: flex;
+  /*alinhas os itens filhos (dentro do main) como centralizado*/
+  align-items: center;
+  /*alinhamento dos itens da tela*/
+  justify-content: space-evenly;
+  /*margem para deixar os itens mais para o meio da tela (15% vertical | 20% horizontal)*/
+  padding: 5% 10% 19% 10%;
+  /*Gap para ter um espaço entre os filhos*/
+  gap: 82px
+}
+
+.pai__conteudo {
+  /*largura para deixar o texto justificado*/
+  width: 50%; /*% pois deixa responsivo caso veja em tela pequena*/
+  /*height: 240px;*//*comentada para melhorar o aspecto da pg*/
+  /*espaçamento entre os elementos da tela*/
+  display: flex;
+  flex-direction: column;
+  /*definindo o tamanho do espaçamento*/
+  gap: 40px;
+}
+/*Alteração do tamanho título*/
+.pai__conteudo__titulo {
+  /*Uso da fonte importada*/
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-style: normal;
+  /*font-size: 36px;*/
+  font-size: 1.50rem; /*transformar em REM = 36px / 16 = 2.25rem*/
+}
+
+.titulo-destaque {
+  color: #7ac7fa;
+}
+
+/* Alteração do tamanho do texto*/
+.pai__conteudo__texto {
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--fonte-secundaria);
+  text-align: justify;
+  /*font-size: 20px;*/
+  font-size: 1rem; /*20px/16 = 1.25rem*/
+}
+
+/*Alteração (espaçamento)dos botões (links)*/
+.pai__links {
+  display: flex;
+  flex-direction: column; /*deixar os botões com layout de coluna*/
+  align-items: center; /*centralizar os botões verticalmente*/
+  justify-content: space-between;
+  gap: 32px; /*espaçamento entre um botão e outro*/
+}
+
+/*estilização do sub-título (Acesse minhas redes)*/
+.pai__links__subtitulo{
+  font-family:"Krona One", sans-serif;
+  font-weight: 400;
+  /*font-size: 24px;*/
+  font-size: 1rem; /*24/16 = 1.5rem*/
+}
+
+/*estilização dos botões*/
+.pai__links__link {
+  /* background-color: var( --cor-terciaria); cor do fundo */
+  display: flex; /*alinhamento flexbox dos links das redes*/
+  justify-content: center; /*centralizando os elementos dos botões*/
+  gap: 16px; /*separação do logo para o texto*/
+  border: 3px double var( --cor-terciaria);
+  width: 50%; /*tamanho do botão*//*% para deixar responsivo*/
+  text-align: center; /*centralizar texto*/
+  border-radius: 10px; /*arredondamento do botão*/
+  /*font-size: 24px; /*tamanho da fonte*/
+  font-size: 1rem; /*24/16 = 1.5rem*/
+  font-weight: 600; /*peso da fonte - negrito*/
+  padding: 21.5px 0; /*espaçamento entre o texto e o botão (21.5 - vertical | 0 horizontal)*/
+  text-decoration: none; /*remoção de link*/
+  color: var( --cor-secundaria); /*cor do texto do botão*/
+  font-family: "Montserrat", sans-serif; /*alteração da font*/
+}
+
+/*estilização dos botões quando o mouse passar por cima*/
+.pai__links__link:hover {
+  background-color: var(--cor-hover);
+}
+
+/*Alteração do tamanho da imagem*/
+.pai__imagem {
+  width: 30%;
+}
+
+/*estilizando o rodapé da pq*/
+.rodape {
+  color: var(--cor-primaria); /*cor da fonte*/
+  background-color: var( --cor-terciaria); /*cor do fundo*/
+  padding: 24px; /*espaço do texto para a borda*/
+  text-align: center; /*texto centralizado*/
+  font-family: 'Montserrat';
+  /*font-size: 24px;*/
+  font-size: 1rem; /*24/16 = 1.5rem*/
+}
+
+.titulos-curriculo{
+  font-family: cursive;
+  /*font-size: 51px;*/
+  font-size: 3.18rem; /*51px/16 = 3.18rem*/
+  color: darkorange;
+  text-align: justify;
+  display: flex;
+  align-items: baseline;
+  padding: 2%;
+}
+
+.texto-curriculo{
+  font-family: system-ui;
+  color: aliceblue;
+  /*font-size: 20px;*/
+  font-size: 1.25rem; /*20px / 16 = 1.25rem*/
+  padding-top: 3%;
+  display: flex;
+  text-align: justify;
+  width: 78%;
+  line-height: 1.9em;
+}
+
+/*Alteração (espaçamento)dos botões (links)*/
+.pai__links_curriculo {
+  display: flex;
+  flex-direction: row; /*deixar os botões com layout de linha*/
+  align-items: center; /*centralizar os botões verticalmente*/
+  justify-content: space-between;
+  gap: 32px; /*espaçamento entre um botão e outro*/
+  padding: 2% 0% 0%;
+}
+
+/*estilização dos botões*/
+.pai__links__link_curriculo {
+  /* background-color: var( --cor-terciaria); cor do fundo */
+  display: flex; /*alinhamento flexbox dos links das redes*/
+  justify-content: center; /*centralizando os elementos dos botões*/
+  gap: 16px; /*separação do logo para o texto*/
+  border: 3px double var( --cor-terciaria);
+  width: 175px; /*tamanho do botão*/
+  text-align: center; /*centralizar texto*/
+  border-radius: 10px; /*arredondamento do botão*/
+  /*font-size: 24px; /*tamanho da fonte*/
+  font-size: 1.5rem; /*24/16 = 1.5rem*/
+  font-weight: 600; /*peso da fonte - negrito*/
+  padding: 21.5px 0; /*espaçamento entre o texto e o botão (21.5 - vertical | 0 horizontal)*/
+  text-decoration: none; /*remoção de link*/
+  color: var( --cor-secundaria); /*cor do texto do botão*/
+  font-family: "Montserrat", sans-serif; /*alteração da font*/
+
+}
+
+.pai__links__link_curriculo:hover {
+  background-color: var(--cor-hover);
+}
+.foto-curriculo{
+  border-radius: 50%;
+  display: flex;
+  width: 330px;
+  height: 330px;
+  margin-left: 85%;
+  margin-top: -20%;
+}
+
+.pai__conteudo__texto_curriculo {
+  font-family: system-ui;
+  color: aliceblue;
+  /*font-size: 20px;*/
+  font-size: 1.25rem; /*20px/16 = 1.25rem*/
+  padding: 0% 5% 10% 5%;
+  display: flex;
+  text-align: justify;
+  width: 66%;
+  flex-direction: column;
+  line-height: 1.9em;
+}
+
+/*----------- CONFIGURAÇÃO MOBILE -----------*/
+/*se a largura máxima for menor que 1200px aplica as configs abaixo*/
+@media(max-width: 1200px){ 
+  .pai { /*classe onde está configirada a divisão de colunas*/
+    flex-direction: column-reverse;
+    /*margem para deixar os itens mais para o meio da tela (15% vertical | 20% horizontal)*/
+  padding: 5% 2%;
+  }
+  .cabecalho{ /*deixar o cabeçalho centralizado*/
+    padding: 10% 0% 3%; /*aumentando espaço do cabeçalho*/
+  }
+  .cabecalho__menu{
+    justify-content: center;
+  }
+  .pai__conteudo{
+    width: auto;
+  }
+}

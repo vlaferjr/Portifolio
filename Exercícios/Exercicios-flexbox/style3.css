@@ -1,0 +1,27 @@
+/*Limpeza da formatação*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /*100% da altura da pg*/
+    height: 100vh;
+    /*tag filha não extrapolar tag mãe*/
+    box-sizing: border-box;
+    /*Fundo Preto*/
+    background-color: black;
+    /*cor da letra*/
+    color: bisque;
+    /*largura com 100% da tela*/
+    width: 100%;
+    /*alinhamento centralizado dos itens*/
+    align-items: center;
+}
+
+.pai{
+    /*tag pai sempre como flex*/
+    display: flex;
+    /*Alinhar os itens filhos de forma centralizada*/
+    align-items: center;
+}

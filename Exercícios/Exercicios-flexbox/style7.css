@@ -1,0 +1,25 @@
+/*limpeza das configs*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    /*Elemento pai não extrapolar o filho*/
+    box-sizing: border-box;
+    /*Uso 100% vertical da tela*/
+    height: 100vh;
+
+    
+}
+
+.pai {
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 200px;
+    height:250px;       
+}

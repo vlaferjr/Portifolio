@@ -1,0 +1,66 @@
+header {
+  text-align: center;
+  /*Alteração da fonte do título*/
+  h1 {
+    color: #1d7175;
+  }
+}
+body {
+  background-color: #d2d3d3;
+  h2 {
+    text-align: center;
+    color: #475b63;
+    font-family: cursive;
+  }
+  /*Alteração da fonte do texto e deixando justificado*/
+  p {
+    font-family: monospace;
+    font-size: x-large;
+    text-align: justify;
+    img {
+      width: 300px;
+      padding: 10px;
+      float: right;
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      /*alteração de links*/
+      color: white;
+      font-size: x-large;
+      font-family: cursive;
+      font-style: normal;
+      text-decoration: auto;
+      border: 2px #22D4FD;
+      border-style: solid;
+      width: 378px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  }
+  
+  span {
+    color: red;
+  }
+  .subtitulo {
+    text-align: left;
+    color: #475b63;
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+footer {
+  background-color: #475b63;
+  color: blanchedalmond;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}

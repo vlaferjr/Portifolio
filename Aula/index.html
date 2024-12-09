@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--definição da língua utilizada no documento-->
+
+<head>
+    <!--codificação dos caracteres, interpreta acentos de forma correta (de qq idioma)-->
+    <meta charset="UTF-8">
+    <!--viewport é o dispositivo usado para acesso à pg, pegando a largura dele com base para criação da pg-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <!--fazer o link com o arquivo css
+    * informar que é uma folha de estilo e o nome do arquivo-->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!--cabeçalho que temos na pg (geralmente onde vai o menu)-->
+    <header class="cabecalho">
+        <nav class="cabecalho__menu"> <!--tag usada para uso de links de navegação-->
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="pai"><!--conteúdo principal que vai na pg-->
+        <section class="pai__conteudo">
+            <!-- Agrupar os elementos dentro da section para ficar apenas 2 elementos na tela (texto e imagem) -->
+            <!--</strong> deixa a parte do texto mais forte-->
+            <!--class = definição da classe css para a tag strong-->
+            <h1 class="pai__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">
+                    com um Front-end de
+                    qualidade!</strong></h1>
+            <!--<span> permite que altere somente determinada parte de forma exclusiva-->
+            <p class="pai__conteudo__texto">Olá! Sou <span>Vladmir Ferrari Junior</span>, desenvolvedora Front-end com
+                especialidade em HTML e CSS.
+                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+
+            <!--âncora, link para algum lugar-->
+            <!--Div para a divisão do grupo dos botões-->
+            <div class="pai__links">
+                <!--Subtítulo para acesso às redes-->
+                <h2 class="pai__links__subtitulo">Acesse minhas redes:</h2>
+                <!--botão git Hub-->
+                <a class="pai__links__link" href="https://github.com/vlaferjr">
+                    <img src="./assets/Logo Github.png"> GitHub
+                </a>
+                <!--botão do linkedin-->
+                <!--botão git Hub-->
+                <a class="pai__links__link" href="https://br.linkedin.com/in/vladferrarijr">
+                    <img src="./assets/Logo linkedin.png"> LinkedIn
+                </a>
+            </div>
+        </section>
+        <img class="pai__imagem" src="./assets/perfil.jpg" alt="avatar de Vlad" width="350px" border-radius="16px">
+    </main>
+    <footer>
+        <p class="rodape">
+            Desenvolvido por @vladferrarijr
+        </p>
+    </footer> <!--rodapé da pg-->
+</body>
+
+</html>

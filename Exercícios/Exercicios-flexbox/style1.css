@@ -1,0 +1,10 @@
+body{
+    height: 100vh; /*usar toda altura da tela*/
+    background-color: aqua;
+}
+
+/*resetar config inicial da pg*/
+*{
+    margin: 0px;
+    padding: 0px;
+}

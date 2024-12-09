@@ -1,0 +1,24 @@
+/*limpeza das configs*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /*uso 100% da altura da pg*/
+    height: 100vh;
+    /*Elemento filho não extrapolar elemento pai*/
+    box-sizing: border-box;
+}
+
+.pai{
+        /*alinhamento pai sempre flex*/
+        display: flex;
+        /*alinhamento de itens*/
+        justify-content: space-between;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+}

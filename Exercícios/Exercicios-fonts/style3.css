@@ -1,0 +1,31 @@
+/*fazer o CSS reset tirando a margem e padding de todos os elementos
+* = seleciona todos os elementos da pg*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Definição de margens*/
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10%;
+}
+
+/*Definindo propriedades da seção*/
+.apresentacao__conteudo {
+  width: 615px;
+}
+
+/*Definindo propriedades para o título*/
+.apresentacao__conteudo__titulo{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Definindo propriedades para o texto*/
+.apresentacao__conteudo__texto{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

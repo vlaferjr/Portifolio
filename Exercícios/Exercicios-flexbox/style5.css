@@ -1,0 +1,20 @@
+/*limpeza das configs*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /*uso 100% da altura da tela*/
+    height: 100vh;
+    /*elemento filho sem extrapolar elemento pai*/
+    box-sizing: border-box;
+    
+}
+
+.container{
+    /*centralizar dentro de uma div*/
+    display: flex;
+    align-items: center;
+    height: 300px;
+}

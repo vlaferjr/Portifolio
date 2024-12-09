@@ -1,0 +1,40 @@
+/*Importação da fonte do título*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/*Importação da fonte do texto*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*fazer o CSS reset tirando a margem e padding de todos os elementos
+* = seleciona todos os elementos da pg*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Definição de margens*/
+  .apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10%;
+  }
+  
+  /*Definindo propriedades da seção*/
+  .apresentacao__conteudo {
+    width: 615px;
+  }
+  
+  /*Definindo propriedades para o título*/
+  .apresentacao__conteudo__titulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 36px;
+    font-style: normal;
+  }
+  
+  /*Definindo propriedades para o texto*/
+  .apresentacao__conteudo__texto{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }

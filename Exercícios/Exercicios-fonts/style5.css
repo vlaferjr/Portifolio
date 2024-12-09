@@ -1,0 +1,46 @@
+/*Importação da fonte do título*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/*Importação da fonte do texto*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*fazer o CSS reset tirando a margem e padding de todos os elementos
+* = seleciona todos os elementos da pg*/
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+  
+  /*Definição de margens*/
+  .apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20%;
+  }
+  
+  /*Definindo propriedades da seção*/
+  .apresentacao__conteudo {
+    width: 560px;
+  }
+  
+  /*Definindo propriedades para o título*/
+  .apresentacao__conteudo__titulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 36px;
+    font-style: normal;
+    color: #F6F6F6;
+  }
+  .apresentacao__conteudo__titulo__destacado{
+    color: #22D4FD;
+  }
+  
+  /*Definindo propriedades para o texto*/
+  .apresentacao__conteudo__texto{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 24px;
+    font-style: normal;
+    color: #F6F6F6;
+  }

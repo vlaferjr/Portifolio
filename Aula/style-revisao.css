@@ -1,0 +1,70 @@
+/*fontes importada do google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&display=swap");
+
+body {
+  background-color: lightpink; /*cor do fundo*/
+  color: darkslategray; /*cor da letra*/
+  height: 100vh; /*altura para usar 100% da tela*/
+}
+
+strong {
+  /*cor do texto destacado*/
+  color: brown;
+}
+
+.titulo-destaque {
+  /*formatação do destaque do título*/
+  color: deeppink;
+  border: blue;
+}
+
+* {
+  /*css reset, tirar a formatação padrão do navegador*/
+  margin: 0;
+  padding: 0;
+}
+
+.pai {
+  display: flex; /*deixa o elemento pai (main) como flex (facilita posicionamento dos filhos)*/
+  align-items: center; /*centralizar os itens dentro de pai*/
+  margin: 10%; /*centralizar todo o conteúdo em relação à página*/
+}
+
+.pai__conteudo {
+  /*altura e largura do conteúdo todo em relação à pagina*/
+  width: 1000px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pai__conteudo__titulo {
+  font-size: 50px; /*tamanho do título*/
+  font-family: "Dancing Script", sans-serif;
+  width: 700px;
+  text-align: center;
+}
+
+.pai__conteudo__texto {
+  /*tamanho do texto*/
+  font-size: 26px;
+  font-family: "Alex Brush", sans-serif;
+}
+
+.pai__links {
+  /*posicionamento dos botões*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.pai__links__links {
+  /*personalização dos botões*/
+  text-decoration: none;
+  font-family: "Alex Brush", sans-serif;
+  font-size: 40px;
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

@@ -1,0 +1,14 @@
+.margin{
+margin: 100px;
+}
+
+.padding{
+    padding: 50px;
+}
+.border{
+    border-style: solid;
+    border-color: aqua;
+}
+.content{
+    content: 50%;
+}

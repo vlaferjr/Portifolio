@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Usando JavaScript-->
+    <script>
+        function alterarSecao(secao) {
+            const conteudo = document.getElementById("conteudo");
+
+            let conteudoSecao = '';
+
+            switch (secao) {
+                case 'objetivo':
+                    conteudoSecao = ` 
+                        <h2 class="titulos-curriculo">Objetivo</h2>
+                        <p class="texto-curriculo"><h3>Tecnologia da Informação<br></h3> </p>
+                            <div><p>Meu objetivo profissional é atuar na área de Tecnologia da Informação, desenvolvendo projetos inovadores e contribuindo para o desenvolvimento de soluções eficazes por meio de software. Busco constantemente aprimorar minhas habilidades em diversas linguagens de programação, permitindo-me adaptar-me a diferentes demandas e ambientes tecnológicos. Minha paixão por trabalhar com TI é movida pelo desejo de criar soluções eficientes que possam transformar processos e agregar valor ao negócio, sempre me mantendo atualizado com as novas tendências e práticas do setor.</p>
+                            <div><p class="texto-curriculo"><h3>Educacional Treinamentos </h3></p>
+                                <p>
+                                Meu objetivo é compartilhar meu conhecimento através de treinamentos em informática, capacitando pessoas desde o uso básico do Pacote Office até o desenvolvimento de habilidades em programação. Acredito que o ensino de tecnologia é uma ferramenta poderosa para transformar carreiras e ampliar oportunidades. Tenho interesse em ministrar cursos que frequentem diferentes níveis de conhecimento, ajudando os alunos a se tornarem mais confiantes e preparados para o mercado
+                                </p>
+                                </div>
+                    `;
+                    break;
+                case 'perfil':
+                    conteudoSecao = `
+                        <h2 class="titulos-curriculo">Perfil</h2>
+                        <p class="texto-curriculo">Sou um profissional da área de TI, apaixonado pelo que faço e com experiência em lidar diretamente com o público.<br> Ao longo da minha carreira, ministrei aulas de informática, o que me proporcionou desenvolver habilidades de comunicação, paciência e carisma.<br> Tenho facilidade em me adaptar a novos ambientes e desafios, mantendo sempre um bom humor e uma atitude perspicaz.<br> Valorizo a comunicação clara e eficaz, e acredito no poder da persistência até certo ponto para alcançar objetivos.<br> Casado e atualmente me adaptando à minha nova casa, estou sempre em busca de aprimorar meus conhecimentos e contribuir positivamente em qualquer equipe da qual faça parte.</p>
+                        <img class="foto-curriculo" src="./assets/perfil.jpg" alt="avatar de Vlad">
+                    `;
+                    break;
+                case 'experiencia':
+                    conteudoSecao = `
+                        <h2 class="titulos-curriculo">Experiência</h2>
+                        <p class="texto-curriculo"><h3>Analista júnior de sistemas - CIEE (desde 2012) <br></h3> </p>
+                        <div>
+                        <ul>
+                            <li>Instrutor de Aprendizagem aos Jovens aprendizes (14 a 24 anos) e estagiários.</li>
+                            <li>Elaboração de cronograma de aulas</li>
+                            <li>Desenvolvimento de conteúdo de informática a ser ministrado pelos instrutores a nível Brasil </li>
+                            <li>Participação em desenvolvimento de pesquisas a ser implantado a nível Brasil </li>
+                            <li>Criação e participação em projetos de podcast </li>
+                        </ul>
+                        <p class="texto-curriculo"><h3>Supervisor de ensino presencial - Anhanguera (03/20 - 12/21) <br></h3> </p>
+                        <div>
+                        <ul>
+                            <li>Supervisor de ensino presencial</li>
+                            <li>Integração de alunos, elaboração e adequação de conteúdo e atividades</li>
+                            <li>Aulas e suporte na área de TI para universitários.</li>
+                        </ul>
+                                                
+                        <p class="texto-curriculo"> <h3>Instrutor de Informática - LBV (01/07 - 08/12) <br></h3> </p>
+                        <div>
+                        <ul>
+                            <li>Levantamento e tabulação de dados escolares</li>
+                            <li>Planejamento de aulas e atividades escolares</li> 
+                            <li>Elaboração de projetos educacionais</li> 
+                            <li>Professor de informática (alunos de 07 a 17 anos).</li>
+                        </ul>
+                        </div>
+                            </div>
+                            </div>
+                    `;
+                    break;
+                case 'formacao':
+                    conteudoSecao = `
+                        <h2 class="titulos-curriculo">Formação</h2>
+                        <p class="texto-curriculo"><h3>Pós - Graduado em Tecnologia na Aprendizagem - (Senac - 2018 - 2020) </h3> </p>
+                        <div>
+                            <ul>
+                                <li>Produção coletiva de mídia imersiva</li>
+                                <li>Produção coletiva de texto impresso e digital</li>
+                                <li>Produção coletiva de áudio </li>
+                            </ul>
+                            <p class="texto-curriculo"><h3>Graduado em Sistemas da Informação - (Anhanguera - 2013 - 2017)  </h3> </p>
+                        <div>
+                            <ul>
+                                <li>lógica de programação</li>
+                                <li>Linguagens C, Java, SQL, JavaScript, CSS, HTML</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="titulos-curriculo"><h6>Cursos</h6></div>
+                            <ul>
+                                <li><h3>CCNA 1 - Introdução à redes - Gerenciamento de Sistemas - (Cisco - 2020 - 2020) </h3> </li>
+                                <li><h3>A partir do zero: HTML e CSS para projetos web - (Alura - 2024) </h3> </li>
+                                <li><h3>Java: Criando aplicações - (Alura - 2024) </h3> </li>
+                            </ul>
+
+                    `;
+                    break;
+                default:
+                    conteudoSecao = `<h2 class="titulos-curriculo">Seção não encontrada</h2>`;
+            }
+            conteudo.innerHTML = conteudoSecao;  <!-- Correção aqui -->
+        }
+    </script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu"> <!--tag usada para uso de links de navegação-->
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="pai__links">
+        <!-- Menu de navegação para o currículo -->
+        <nav class="pai__links_curriculo">
+            <h3><a class="pai__links__link_curriculo" href="#" onclick="alterarSecao('perfil')">Perfil</a></h3>
+            <h3><a class="pai__links__link_curriculo" href="#" onclick="alterarSecao('objetivo')">Objetivo</a></h3>
+            <h3><a class="pai__links__link_curriculo" href="#" onclick="alterarSecao('experiencia')">Experiência</a>
+            </h3>
+            <h3><a class="pai__links__link_curriculo" href="#" onclick="alterarSecao('formacao')">Formação</a></h3>
+        </nav>
+
+        <section class="pai__conteudo__texto_curriculo" id="conteudo">
+            <!-- Seção onde muda -->
+            <h2>Bem Vindo!</h2>
+            <p>Selecione uma seção do Currículo para visualizar</p>
+        </section>
+    </main>
+    <footer>
+        <p class="rodape">
+            Desenvolvido por @vladferrarijr
+        </p>
+    </footer> <!--rodapé da pg-->
+
+</body>
+
+</html>
